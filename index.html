@@ -53,23 +53,35 @@
     </header>
     <main>
       <nav id="mainNavigation" class="inline-tab">
-        <ul>
-          <li>Page 1</li>
-          <li>Page 2</li>
-          <li>Page 3</li>
+        <ul role="tablist">
+          <li id="tabPage1" role="tab" aria-controls="page1">
+            Page 1
+          </li>
+          <li id="tabPage2" role="tab">
+            Page 2
+          </li>
+          <li id="tabPage3" role="tab">
+            Page 3
+          </li>
         </ul>
       </nav>
-      <section id="page1" class="page">
+      <section id="page1" class="page" role="tabPanel" aria-labelledby="tabpage1">
         <h2>This is Page 1</h2>
         <p>Description of Page 1</p>
-        <nav id="page1Navigation" class="pageNavigation inline-tab">
-          <ul>
-            <li>SubPage 1</li>
-            <li>SubPage 2</li>
-            <li>SubPage 3</li>
+        <nav id="page1Navigation" class="page-navigation inline-tab">
+          <ul role="tablist">
+            <li id="page1TabSubPage1" role="tab" aria-controls="subPage1">
+              SubPage 1
+            </li>
+            <li id="page1TabSubPage2" role="tab" aria-controls="subPage2">
+              SubPage 2
+            </li>
+            <li id="page1TabSubPage3" role="tab" aria-controls="subPage3">
+              SubPage 3
+            </li>
           </ul>
         </nav>
-        <div class="subPage">
+        <div id="subPage1" class="subPage" role="tabPanel" aria-labelledby="page1TabSubPage1">
           <h3>SubPage 1</h3>
           <p>Subpage 1 content</p>
           <ul class="accordion">
@@ -93,19 +105,27 @@
             </li>
           </ul>
         </div>
-        <div class="subPage">
+        <div id="subPage2" class="subPage" role="tabPanel" aria-labelledby="page1TabSubPage2">
           <h3>SubPage 2</h3>
           <p>Subpage 2 content</p>
         </div>
-        <div class="subPage">
+        <div id="subPage3" class="subPage" role="tabPanel" aria-labelledby="page1TabSubPage3">
           <h3>SubPage 3</h3>
           <p>Subpage 3 content</p>
         </div>
       </section>
+      <section id="page2" class="page" role="tabPanel" aria-labelledby="tabPage2">
+        <h2>This is Page 2</h2>
+        <p>Description of Page 2</p>
+      </section>
+      <section id="page2" class="page" role="tabPanel" aria-labelledby="tabpage3">
+        <h2>This is Page 3</h2>
+        <p>Description of Page 3</p>
+      </section>
 <!--   Add more pages once design is finalised     -->
     </main>
     <footer>
-      <nav>
+      <nav id="footerNavigation" class="inline-tab">
         <ul>
           <li>Footer link 1</li>
           <li>Footer link 2</li>
