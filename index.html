@@ -2,6 +2,10 @@
   <head>
     <title>Jade's playground</title>
     <style>
+      * {
+        border-collapse: collapse;
+      }
+
       header, main, footer {
         margin: 1rem;
         padding: 1rem;
@@ -13,6 +17,10 @@
 
       nav {
         border: 1px solid #56cfe1;
+      }
+
+      nav.inline-tab ul li {
+        display:inline-block;
       }
       
     </style>
@@ -44,7 +52,7 @@
       </ul>  
     </header>
     <main>
-      <nav id="mainNavigation">
+      <nav id="mainNavigation" class="inline-tab">
         <ul>
           <li>Page 1</li>
           <li>Page 2</li>
@@ -54,7 +62,7 @@
       <section id="page1" class="page">
         <h2>This is Page 1</h2>
         <p>Description of Page 1</p>
-        <nav id="page1Navigation" class="pageNavigation">
+        <nav id="page1Navigation" class="pageNavigation inline-tab">
           <ul>
             <li>SubPage 1</li>
             <li>SubPage 2</li>
@@ -64,6 +72,26 @@
         <div class="subPage">
           <h3>SubPage 1</h3>
           <p>Subpage 1 content</p>
+          <ul class="accordion">
+            <li>
+              <button>Section 1 button</button>
+              <div>
+                <p>Section 1 content</p>
+              </div>
+            </li>
+            <li>
+              <button>Section 2 button</button>
+              <div>
+                <p>Section 2 content</p>
+              </div>
+            </li>
+            <li>
+              <button>Section 3 button</button>
+              <div>
+                <p>Section 3 content</p>
+              </div>
+            </li>
+          </ul>
         </div>
         <div class="subPage">
           <h3>SubPage 2</h3>
