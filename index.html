@@ -2,13 +2,17 @@
   <head>
     <title>Jade's playground</title>
     <style>
-      header, main, section, footer {
-        border: 1px solid black;
+      header, main, footer {
         margin: 1rem;
         padding: 1rem;
+        border: 1px solid #735d78;
       }
+      section {
+        border: 1px solid #b392ac;
+      }
+
       nav {
-        border: 1px solid blue;
+        border: 1px solid #56cfe1;
       }
       
     </style>
@@ -47,29 +51,28 @@
           <li>Page 3</li>
         </ul>
       </nav>
-      <section id="page1">
+      <section id="page1" class="page">
         <h2>This is Page 1</h2>
         <p>Description of Page 1</p>
-        <nav id="page1Navigation">
+        <nav id="page1Navigation" class="pageNavigation">
           <ul>
             <li>SubPage 1</li>
             <li>SubPage 2</li>
             <li>SubPage 3</li>
           </ul>
         </nav>
-        <div>
-          <h3>SubPage 1</li>
+        <div class="subPage">
+          <h3>SubPage 1</h3>
           <p>Subpage 1 content</p>
         </div>
-        <div>
-          <h3>SubPage 2</li>
+        <div class="subPage">
+          <h3>SubPage 2</h3>
           <p>Subpage 2 content</p>
         </div>
-        <div>
-          <h3>SubPage 3</li>
+        <div class="subPage">
+          <h3>SubPage 3</h3>
           <p>Subpage 3 content</p>
         </div>
-        
       </section>
 <!--   Add more pages once design is finalised     -->
     </main>
