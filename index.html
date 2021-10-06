@@ -1,9 +1,32 @@
 <html>
   <head>
+    <title>Jade's playground</title>
   </head>
   <body>
     <header>
-      <h1>Test title</h1>
+      <h1>Test hub</h1>
+      <p>
+         This is a test "hub" to mess around with. In this example, a hub consists of a number of "pages" that then offer "subpages" which then in turn may have accordions and other content inside them. An example:
+      </p>
+      <ul>
+        <li>
+          Page
+          <ul>
+            <li>
+              Subpage
+                <ul>
+                  <li>
+                    Accordion 1
+                    <ul>
+                      <li>Content 1</li>
+                      <li>Content 2</li>
+                    </ul>
+                  </li>
+               </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>  
     </header>
     <nav id="mainNavigation">
       <ul>
@@ -13,7 +36,7 @@
       </ul>
     </nav>
     <main>
-      <div id="page1">
+      <section id="page1">
         <h2>This is Page 1</h2>
         <p>Description of Page 1</p>
         <nav id="page1Navigation">
@@ -23,7 +46,20 @@
             <li>SubPage 3</li>
           </ul>
         </nav>
-      </div>
+        <div>
+          <h3>SubPage 1</li>
+          <p>Subpage 1 content</p>
+        </div>
+        <div>
+          <h3>SubPage 2</li>
+          <p>Subpage 2 content</p>
+        </div>
+        <div>
+          <h3>SubPage 3</li>
+          <p>Subpage 3 content</p>
+        </div>
+        
+      </section>
 <!--   Add more pages once design is finalised     -->
     </main>
     <footer>
