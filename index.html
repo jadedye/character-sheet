@@ -35,36 +35,42 @@
       <p>
          This is a test "hub" to mess around with. In this example, a hub consists of a number of "pages" that then offer "subpages" which then in turn may have accordions and other content inside them. An example:
       </p>
-      <ul>
-        <li>
-          Page
-          <ul>
-            <li>
-              Subpage
-                <ul>
-                  <li>
-                    Accordion 1
-                    <ul>
-                      <li>Content 1</li>
-                      <li>Content 2</li>
-                    </ul>
-                  </li>
-               </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>  
+      <div>
+        <ul>
+          <li>
+            <span class="material-icons">
+              light_mode
+            </span>
+            Light mode
+          </li>
+          <li>
+            <span class="material-icons">
+              dark_mode
+            </span>
+            Dark mode
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <nav id="mainNavigation" class="inline-tab">
         <ul role="tablist">
           <li id="tabPage1" role="tab" aria-controls="page1">
-            Page 1
+            <span class="material-icons">
+              home
+            </span>
+             Page 1
           </li>
           <li id="tabPage2" role="tab">
+            <span class="material-icons">
+              person
+            </span>
             Page 2
           </li>
           <li id="tabPage3" role="tab">
+            <span class="material-icons">
+              view_list
+            </span>
             Page 3
           </li>
         </ul>
@@ -75,12 +81,21 @@
         <nav id="page1Navigation" class="page-navigation inline-tab">
           <ul role="tablist">
             <li id="page1TabSubPage1" role="tab" aria-controls="subPage1">
+              <span class="material-icons">
+                calendar_today
+              </span>
               SubPage 1
             </li>
             <li id="page1TabSubPage2" role="tab" aria-controls="subPage2">
+              <span class="material-icons">
+                lightbulb
+              </span>
               SubPage 2
             </li>
             <li id="page1TabSubPage3" role="tab" aria-controls="subPage3">
+              <span class="material-icons">
+                mail
+              </span>
               SubPage 3
             </li>
           </ul>
