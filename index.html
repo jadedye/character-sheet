@@ -1,6 +1,9 @@
 <html>
   <head>
     <title>Jade's playground</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
     <style>
       * {
         border-collapse: collapse;
@@ -24,6 +27,7 @@
       }
       
     </style>
+    
   </head>
   <body>
     <header>
@@ -88,7 +92,20 @@
             <li>
               <button>Section 1 button</button>
               <div>
-                <p>Section 1 content</p>
+                <ul>
+                  <li>
+                    <span class="material-icons-outlined">done</span>
+                    Status 1
+                  </li>
+                  <li>
+                    <span class="material-icons-outlined">error_outline</span>
+                    Status 2
+                  </li>
+                  <li>
+                    <span class="material-icons-outlined">error_outline</span>
+                    Status 3
+                  </li>
+                </ul>
               </div>
             </li>
             <li>
@@ -251,6 +268,7 @@
         <h2>This is Page 2</h2>
         <p>Description of Page 2</p>
         <table>
+          <caption>Table of actions</caption>
           <thead>
             <tr>
               <th>Status</th>
@@ -310,7 +328,26 @@
       </section>
       <section id="page2" class="page" role="tabPanel" aria-labelledby="tabpage3">
         <h2>This is Page 3</h2>
-        <p>Description of Page 3</p>
+        <p>Welcome to the page of lists</p>
+        <section>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetuer.</li>
+            <li>Aenean commodo ligula eget dolor.</li>
+            <li>Aenean massa cum sociis natoque penatibus.</li>
+          </ul>
+        </section>
+        <section>
+          <dl>
+            <dt>Definition list</dt>
+            <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.</dd>
+            <dt>Lorem ipsum dolor sit amet</dt>
+            <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.</dd>
+        </dl>
+        </section>
       </section>
 <!--   Add more pages once design is finalised     -->
     </main>
