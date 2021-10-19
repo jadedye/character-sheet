@@ -47,7 +47,7 @@ body {
     background-color: var(--colour-neutral-100);
 }
 
-.header-content, main, footer, section, nav li {
+.header-content, .header-text, main, footer, section, nav li {
     padding: var(--padding-normal);
 }
 
