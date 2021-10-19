@@ -43,3 +43,14 @@ ul, dd {
 .accordion, nav.inline-tab ul {
     list-style-type: none;
 }
+
+.icon-button, .accordion-button, [role=tab] {
+    display: inline-flex;
+    align-items: center;
+}
+
+.accordion-button {
+    width: 100%;
+    justify-content: space-between;
+    border: 0;
+}
