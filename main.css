@@ -8,6 +8,7 @@
     --colour-primary-600: #DE3A11;
     --colour-primary-700: #C52707;
     --colour-primary-800: #AD1D07;
+    --colour-primary-900: #841003;
 
     --colour-secondary-050: #EFFCF6;
     --colour-secondary-100: #C6F7E2;
@@ -44,11 +45,15 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     color: var(--colour-neutral-900);
-    background-color: var(--colour-neutral-100);
+    background-color: var(--colour-neutral-050);
 }
 
 .header-content, .header-text, main, footer, section, nav li {
     padding: var(--padding-normal);
+}
+
+.header-content {
+    display:flex;
 }
 
 h1,h2,h3,h4,h5 {
@@ -69,9 +74,7 @@ button {
     border: 0;
 }
 
-.material-icons {
-    color: var(--colour-primary-050);
-}
+
 
 .accordion, nav.inline-tab ul {
     list-style-type: none;
@@ -85,9 +88,15 @@ button {
     display: inline-flex;
     align-items: center;
     background-color: var(--colour-primary-300);
+    color: var(--colour-primary-800);
+}
+
+.icon-button .material-icons {
+    color: var(--colour-primary-050);
 }
 
 .accordion-header {
     width: 100%;
     justify-content: space-between;
+    padding-left: var(--padding-normal);
 }
