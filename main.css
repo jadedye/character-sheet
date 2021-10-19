@@ -18,7 +18,7 @@ header {
     padding: calc(var(--padding-normal) * 2);
 }
 
-main, footer, section, #mainNavigation, nav li {
+main, footer, section, nav li {
     padding: var(--padding-normal);
 }
 
