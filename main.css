@@ -43,12 +43,12 @@ ul, dd, li {
     flex-wrap: wrap;
 }
 
-.icon-button, .accordion-button, [role=tab], .inline-tab {
+.icon-button, .accordion-header, [role=tab], .inline-tab {
     display: inline-flex;
     align-items: center;
 }
 
-.accordion-button {
+.accordion-header {
     width: 100%;
     justify-content: space-between;
     border: 0;
