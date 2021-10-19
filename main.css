@@ -2,9 +2,13 @@
     border-collapse: collapse;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header, main, footer {
     padding: 1rem;
-    border: 1px solid #735d78;
 }
 
 section {
