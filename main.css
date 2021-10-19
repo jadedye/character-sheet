@@ -48,7 +48,11 @@ body {
     background-color: var(--colour-neutral-050);
 }
 
-.header-content, .header-text, main, footer, section, nav li {
+header {
+    background-color: var(--colour-primary-300);
+}
+
+.header-content, .header-text, #mainNavigation, main, footer, section, nav li, .accordion-header, .icon-button {
     padding: var(--padding-normal);
 }
 
@@ -88,15 +92,18 @@ button {
     display: inline-flex;
     align-items: center;
     background-color: var(--colour-primary-300);
-    color: var(--colour-primary-800);
 }
 
-.icon-button .material-icons {
+.icon-button .material-icons, 
+.accordion-header .material-icons, 
+[role=tab] .material-icons, 
+.inline-tab .material-icons, 
+.button-icon .material-icons,
+header {
     color: var(--colour-primary-050);
 }
 
 .accordion-header {
     width: 100%;
     justify-content: space-between;
-    padding-left: var(--padding-normal);
 }
