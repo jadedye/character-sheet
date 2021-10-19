@@ -53,7 +53,7 @@ header {
     background-color: var(--colour-primary-300);
 }
 
-.header-content, .header-text, #mainNavigation, main, footer, section, nav li, .accordion-header, .icon-button {
+.header-content, .header-text, main, footer, section, nav li, .accordion-header, .icon-button {
     padding: var(--padding-normal);
 }
 
