@@ -1,0 +1,20 @@
+* {
+    border-collapse: collapse;
+}
+
+header, main, footer {
+    padding: 1rem;
+    border: 1px solid #735d78;
+}
+
+section {
+    border: 1px solid #b392ac;
+}
+
+nav {
+    border: 1px solid #56cfe1;
+}
+
+nav.inline-tab ul li {
+    display:inline-block;
+}
