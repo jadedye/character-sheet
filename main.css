@@ -14,11 +14,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    padding: calc(var(--padding-normal) * 2);
-}
-
-main, footer, section, nav li {
+.header-content, main, footer, section, nav li {
     padding: var(--padding-normal);
 }
 
