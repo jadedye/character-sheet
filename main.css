@@ -1,6 +1,7 @@
 :root {
     /* --colour-primary: ;
     --colour-secondary: ; */
+    --padding-normal: 1rem;
 }
 
 * {
@@ -13,8 +14,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-header, main, footer, section {
-    padding: 1rem;
+header {
+    padding: calc(--padding-normal * 2);
+}
+
+main, footer, section, #mainNavigation, nav li {
+    padding: --padding-normal;
 }
 
 h1,h2,h3,h4,h5 {
@@ -26,6 +31,7 @@ section {
 }
 
 nav {
+    width: 100%;
     border: 1px solid #56cfe1;
 }
 
