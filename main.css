@@ -15,11 +15,11 @@ body {
 }
 
 header {
-    padding: calc(--padding-normal * 2);
+    padding: calc(var(--padding-normal) * 2);
 }
 
 main, footer, section, #mainNavigation, nav li {
-    padding: --padding-normal;
+    padding: var(--padding-normal);
 }
 
 h1,h2,h3,h4,h5 {
