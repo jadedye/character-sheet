@@ -1,6 +1,37 @@
 :root {
-    /* --colour-primary: ;
-    --colour-secondary: ; */
+    --colour-primary-050: #FFE8D9;
+    --colour-primary-100: #FFD0B5;
+    --colour-primary-200: #FFB088;
+    --colour-primary-300: #FF9466;
+    --colour-primary-400: #F9703E;
+    --colour-primary-500: #F35627;
+    --colour-primary-600: #DE3A11;
+    --colour-primary-700: #C52707;
+    --colour-primary-800: #AD1D07;
+
+    --colour-secondary-050: #EFFCF6;
+    --colour-secondary-100: #C6F7E2;
+    --colour-secondary-200: #8EEDC7;
+    --colour-secondary-300: #65D6AD;
+    --colour-secondary-400: #3EBD93;
+    --colour-secondary-500: #27AB83;
+    --colour-secondary-600: #199473;
+    --colour-secondary-700: #147D64;
+    --colour-secondary-800: #0C6B58;
+    --colour-secondary-900: #014D40;  
+
+    --colour-neutral-050: #F0F4F8;
+    --colour-neutral-100: #D9E2EC;
+    --colour-neutral-200: #BCCCDC;
+    --colour-neutral-300: #9FB3C8;
+    --colour-neutral-400: #829AB1;
+    --colour-neutral-500: #627D98;
+    --colour-neutral-600: #486581;
+    --colour-neutral-700: #334E68;
+    --colour-neutral-800: #243B53;
+    --colour-neutral-900: #102A43;
+
+
     --padding-normal: 1rem;
 }
 
@@ -12,6 +43,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    color: var(--colour-neutral-900);
+    background-color: var(--colour-neutral-100);
 }
 
 .header-content, main, footer, section, nav li {
@@ -22,19 +55,22 @@ h1,h2,h3,h4,h5 {
     font-family: 'Patua One', cursive, sans-serif;
 }
 
-section {
-    border: 1px solid #b392ac;
-}
-
 nav {
     width: 100%;
-    border: 1px solid #56cfe1;
 }
 
 ul, dd, li {
     padding-left: 0;
     margin-left: 0;
     list-style-type: none;
+}
+
+button {
+    border: 0;
+}
+
+.material-icons {
+    color: var(--colour-primary-400);
 }
 
 .accordion, nav.inline-tab ul {
@@ -48,10 +84,10 @@ ul, dd, li {
 .icon-button, .accordion-header, [role=tab], .inline-tab {
     display: inline-flex;
     align-items: center;
+    background-color: var()
 }
 
 .accordion-header {
     width: 100%;
     justify-content: space-between;
-    border: 0;
 }
