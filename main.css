@@ -41,7 +41,6 @@
     border-collapse: collapse;
     font-family: 'Roboto', sans-serif;
     color: var(--colour-neutral-1000);
-    font-size: 1rem;
 }
 
 body {
@@ -78,6 +77,7 @@ ul, dd, li {
 
 button {
     border: 0;
+    font-size: 1rem;
 }
 
 .accordion, nav.inline-tab ul {
