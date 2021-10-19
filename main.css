@@ -1,3 +1,8 @@
+:root {
+    --colour-primary: ;
+    --colour-secondary: ;
+}
+
 * {
     border-collapse: collapse;
 }
@@ -21,4 +26,14 @@ nav {
 
 nav.inline-tab ul li {
     display:inline-block;
+    padding-left: 0;
+}
+
+ul, dd {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.accordion, nav.inline-tab ul {
+    list-style-type: none;
 }
