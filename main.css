@@ -70,7 +70,7 @@ button {
 }
 
 .material-icons {
-    color: var(--colour-primary-400);
+    color: var(--colour-primary-050);
 }
 
 .accordion, nav.inline-tab ul {
@@ -84,7 +84,7 @@ button {
 .icon-button, .accordion-header, [role=tab], .inline-tab {
     display: inline-flex;
     align-items: center;
-    background-color: var()
+    background-color: var(--colour-primary-300);
 }
 
 .accordion-header {
