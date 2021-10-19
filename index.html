@@ -9,28 +9,28 @@
   </head>
   <body>
     <header>
-      <h1>Test hub</h1>
-      <p>
-         This is a test "hub" to mess around with. In this example, a hub consists of a number of "pages" that then offer "subpages" which then in turn may have accordions and other content inside them. An example:
-      </p>
-      <div>
-        <button class="icon-button">
-          <div>
-            <span class="material-icons">
-              light_mode
-            </span>
-            Light mode
-          </div>
-          <div>
-            <span class="material-icons">
-              dark_mode
-            </span>
-            Dark mode
-          </div>
-        </button>
+      <div class="header-content">
+        <h1>Test hub</h1>
+        <p>
+          This is a test "hub" to mess around with. In this example, a hub consists of a number of "pages" that then offer "subpages" which then in turn may have accordions and other content inside them. An example:
+        </p>
+        <div>
+          <button class="icon-button">
+            <div>
+              <span class="material-icons">
+                light_mode
+              </span>
+              Light mode
+            </div>
+            <div>
+              <span class="material-icons">
+                dark_mode
+              </span>
+              Dark mode
+            </div>
+          </button>
+        </div>
       </div>
-    </header>
-    <main>
       <nav id="mainNavigation" class="inline-tab">
         <ul role="tablist">
           <li id="tabPage1" role="tab" aria-controls="page1">
@@ -53,6 +53,8 @@
           </li>
         </ul>
       </nav>
+    </header>
+    <main>
       <section id="page1" class="page" role="tabPanel" aria-labelledby="tabpage1">
         <h2>This is Page 1</h2>
         <p>Description of Page 1</p>
