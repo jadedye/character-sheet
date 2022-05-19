@@ -1,10 +1,40 @@
-<select>
-  <option>Wizard</option>
-  <option>Sorceror</option>
+<label for="classChoice">
+  Class
+  <select id="classChoice" onChange="getClass()">
+    <option value="wizard">Wizard</option>
+    <option value="sorceror">Sorceror</option>
+  </select>
+</label>
+
+<select id="levelChoice">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
 </select>
 
-<select>
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-</select>
+<table>
+  <thead>
+    <tr>
+      <th>
+        Level 1
+      </th>
+      <th>
+        Level 2
+      </th>
+      <th>
+        Level 3
+      </th>
+    </tr>
+    <tr>
+      <td id="level1">
+
+      </td>
+      <td id="level2">
+
+      </td>
+      <td id="level3">
+
+      </td>
+    </tr>
+  </thead>
+</table>
