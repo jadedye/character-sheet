@@ -2,7 +2,7 @@
  * Gets the class from the class dropdown
  */
 function getClass(){
-    let chosenClass = document.getElementId("classChoice").value;
+    let chosenClass = document.getElementById("classChoice").value;
     console.log("your class is...", chosenClass)
 }
 
