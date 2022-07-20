@@ -1,255 +1,259 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
+
+<head>
     <title>Spell slot tracker</title>
     <script type="text/javascript" src="./helper.js"></script>
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-  </head>
-  <body>
-    <section>
-    <h2>Abilities</h2>
-    <div id="ability-strength" class="container ability">
-      <div class="label">
-        Strength
-      </div>
-      <div class="modifier">
-        +0
-      </div>
-       <div class="score">
-        10
-      </div>
-    </div>
-    <div id="ability-dexterity" class="container ability">
-      <div class="label">
-        Dexterity
-      </div>
-      <div class="modifier">
-        +3
-      </div>
-       <div class="score">
-        16
-      </div>
-    </div>
-    <div id="ability-constitution" class="container ability">
-      <div class="label">
-        Constitution
-      </div>
-      <div class="modifier">
-        +0
-      </div>
-       <div class="score">
-        11
-      </div>
-    </div>
-    <div id="ability-intelligence" class="container ability">
-      <div class="label">
-        Intelligence
-      </div>
-      <div class="modifier">
-        +2
-      </div>
-       <div class="score">
-        13
-      </div>
-    </div>
-    <div id="ability-wisdom" class="container ability">
-      <div class="label">
-        Wisdom
-      </div>
-      <div class="modifier">
-        -1
-      </div>
-       <div class="score">
-        9
-      </div>
-    </div>
-    <div id="ability-charisma" class="container ability">
-      <div class="label">
-        Charisma
-      </div>
-      <div class="modifier">
-        +2
-      </div>
-       <div class="score">
-        15
-      </div>
-    </div>
-    </section>
-    
-    <section>
-    <h2>Skills</h2>
-      <div id="skill-acrobatics" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Acrobatics
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-animalhandling" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Animal handling
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-arcana" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Arcana
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-     <div id="skill-athletics" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Athletics
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-deception" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Deception
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-history" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          History
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-insight" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Insight
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-intimidation" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Intimidation
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-investigation" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Investigation
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-medicine" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Medicine
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-nature" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Nature
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-perception" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Proficiency
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-performance" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Performance
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-persuasion" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Persuasion
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-religion" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Religion
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-sleightofhand" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Sleight of hand
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-stealth" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Stealth
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-       <div id="skill-survival" class="container skill">
-        <span class="proficiency">
-        </span>
-        <div class="label">
-          Survival
-        </div>
-        <div class="modifier">
-        </div>
-      </div>
-    </section>
-    
-    <section>
-    <h2>Spell slots</h2>
+</head>
 
-<label for="classChoice">
+<body>
+    <section>
+        <h2>Abilities</h2>
+        <div id="ability-strength" class="container ability">
+            <div class="label">
+                Strength
+            </div>
+            <div class="modifier">
+                +0
+            </div>
+            <div class="score">
+                10
+            </div>
+        </div>
+        <div id="ability-dexterity" class="container ability">
+            <div class="label">
+                Dexterity
+            </div>
+            <div class="modifier">
+                +3
+            </div>
+            <div class="score">
+                16
+            </div>
+        </div>
+        <div id="ability-constitution" class="container ability">
+            <div class="label">
+                Constitution
+            </div>
+            <div class="modifier">
+                +0
+            </div>
+            <div class="score">
+                11
+            </div>
+        </div>
+        <div id="ability-intelligence" class="container ability">
+            <div class="label">
+                Intelligence
+            </div>
+            <div class="modifier">
+                +2
+            </div>
+            <div class="score">
+                13
+            </div>
+        </div>
+        <div id="ability-wisdom" class="container ability">
+            <div class="label">
+                Wisdom
+            </div>
+            <div class="modifier">
+                -1
+            </div>
+            <div class="score">
+                9
+            </div>
+        </div>
+        <div id="ability-charisma" class="container ability">
+            <div class="label">
+                Charisma
+            </div>
+            <div class="modifier">
+                +2
+            </div>
+            <div class="score">
+                15
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ol class="list-group list-group-flush">
+            <li id="skill-acrobatics">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Acrobatics
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-animalhandling">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Animal handling
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-arcana">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Arcana
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-athletics">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Athletics
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-deception">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Deception
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-history">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    History
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-insight">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Insight
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-intimidation">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Intimidation
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-investigation">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Investigation
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-medicine">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Medicine
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-nature">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Nature
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-perception">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Proficiency
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-performance">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Performance
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-persuasion">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Persuasion
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-religion">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Religion
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-sleightofhand">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Sleight of hand
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-stealth">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Stealth
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+            <li id="skill-survival">
+                <span class="proficiency">
+        </span>
+                <div class="label">
+                    Survival
+                </div>
+                <div class="modifier">
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Spell slots</h2>
+
+        <label for="classChoice">
   Class
   <select id="classChoice" onChange="getClass()" class="form-control">
     <option value="wizard">Wizard</option>
@@ -257,39 +261,40 @@
   </select>
 </label>
 
-<select id="levelChoice"  class="form-control">
+        <select id="levelChoice" class="form-control">
   <option value="1">1</option>
   <option value="2">2</option>
   <option value="3">3</option>
 </select>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>
-        Level 1
-      </th>
-      <th>
-        Level 2
-      </th>
-      <th>
-        Level 3
-      </th>
-    </tr>
-    <tr>
-      <td id="level1">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        Level 1
+                    </th>
+                    <th>
+                        Level 2
+                    </th>
+                    <th>
+                        Level 3
+                    </th>
+                </tr>
+                <tr>
+                    <td id="level1">
 
-      </td>
-      <td id="level2">
+                    </td>
+                    <td id="level2">
 
-      </td>
-      <td id="level3">
+                    </td>
+                    <td id="level3">
 
-      </td>
-    </tr>
-  </thead>
-</table>
+                    </td>
+                </tr>
+            </thead>
+        </table>
     </section>
 
 </body>
+
 </html>
